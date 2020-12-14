@@ -15,7 +15,7 @@ public class Main {
         }
 
         //task#2
-/*              Random r = new Random();
+/*       Random r = new Random();
         int[] a = new int[20];
         for (int j=0; j<20; j++) {
             a[j] = r.nextInt(47);
