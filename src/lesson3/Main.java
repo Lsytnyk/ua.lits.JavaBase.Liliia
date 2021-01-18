@@ -1,33 +1,21 @@
 package lesson3;
-import java.util.Random;
 
-public class DZ2 {
-    public static void isPalindrom(String word) {
+public class Main {
+
+    public static void main(String[] args) {
+	// task one
 
 
- /*       //task#1
-        String s="likil";
-        int length = s.length();
-        int j = length/2;
-        boolean flag = true;
+        if (Palindrom.isPalindrom("onnko")) {
+            System.out.println("polindrom");
 
-        for(int i=0; i<j;i++){
-            int k = length-1-i;
-            if (s.charAt(i) != s.charAt(k)){
-                flag=false;
-                break;
-            }
-
-        }
-        if (flag) {
-            System.out.println("polindrome");
         }
         else{
             System.out.println("not polindrome");
-        }*/
+        }
 
         //task#2
-/*              Random r = new Random();
+/*       Random r = new Random();
         int[] a = new int[20];
         for (int j=0; j<20; j++) {
             a[j] = r.nextInt(47);
@@ -94,50 +82,11 @@ public class DZ2 {
             System.out.println("");
         }
 
-        //Task 4
 
-        int month = 1;
+        //task four
 
-        switch (month) {
-            case 1:
-                System.out.println("I was bor in january");
-                break;
-            case 2:
-                System.out.println("I was born in february");
-                break;
-            case 3:
-                System.out.println("I was born in march");
-                break;
-            case 4:
-                System.out.println("I was born in april");
-                break;
-            case 5:
-                System.out.println("I was born in may");
-                break;
-            case 6:
-                System.out.println("I was born in june");
-                break;
-            case 7:
-                System.out.println("I was born in july");
-                break;
-            case 8:
-                System.out.println("I was born in august");
-                break;
-            case 9:
-                System.out.println("I was born in september");
-                break;
-            case 10:
-                System.out.println("I was born in october");
-                break;
-            case 11:
-                System.out.println("I was born in november");
-                break;
-            case 12:
-                System.out.println("I was born in december");
-                break;
+       WasBorn newBorn = new WasBorn();
+       newBorn.isWasBorn(2);
 
-        }
     }
 }
-
-
