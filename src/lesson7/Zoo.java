@@ -30,7 +30,11 @@ public class Zoo {
 
         Worker worker = new Worker();
         System.out.print(worker.getPosition() + " ");
-        worker.feed(zebra);
+        try {
+            worker.feed(zebra);
+        } catch (Error e){
+            System.out.println(e);
+        }
         Cleaner cleaner = new Cleaner();
         cleaner.clean(lion1);
 
@@ -42,7 +46,11 @@ public class Zoo {
         visitor6.enter();
         i++;
         visitor1.watch(lion1);
-        worker.feed(lion1);
+        try {
+            worker.feed(lion1);
+        } catch (Error e){
+        System.out.println(e);
+    }
         cleaner.clean(zebra);
 
         System.out.println(DayPart.Evening);
@@ -53,7 +61,11 @@ public class Zoo {
         visitor5.exit();
         visitor6.exit();
 
-        worker.feed(lion2);
+        try {
+            worker.feed(lion2);
+        } catch (Error e) {
+            System.out.println(e);
+        }
         cleaner.clean(lion2);
         Accountant accountant = new Accountant();
         accountant.income(i);
